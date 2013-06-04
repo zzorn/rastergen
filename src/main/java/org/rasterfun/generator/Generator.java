@@ -12,6 +12,7 @@ import java.util.concurrent.ExecutorService;
  * Something that generates pictures based on provided parameters.
  */
 // TODO: Return calculations unstarted, start manually
+// TODO: Change most generatePictures calls to be without executor service, use static executor service?
 public interface Generator {
 
     /**

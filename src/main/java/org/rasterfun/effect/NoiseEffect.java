@@ -12,6 +12,7 @@ import static org.rasterfun.core.compiler.CommonVariables.*;
 /**
  *
  */
+// TODO: Extract base class for effects that write to value channel
 public class NoiseEffect extends EffectBase {
 
     private int  seed = 42;

@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * Command line utility for generating images from raster descriptions.
  */
+// TODO: Add easy to use facade class for the library
 public class RasterGen {
     private static final int ERROR   = 0;
     private static final int INFO    = 1;

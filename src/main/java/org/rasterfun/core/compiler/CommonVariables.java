@@ -41,6 +41,9 @@ public class CommonVariables {
     public static final OutputVariable WIDTH      = createBuiltinVar("absoluteWidth", Float.class, W_NAME, null);
     public static final OutputVariable HEIGHT     = createBuiltinVar("absoluteHeight", Float.class, H_NAME, null);
 
+    // TODO: Add world x,y, rename absolute x,y,w,h to picture x,y,w,h or something like that.
+    // TODO: Replace relative x,y with world x,y?
+
     public static List<OutputVariable> BUILT_IN_VARS = Collections.unmodifiableList(new ArrayList<OutputVariable>(Arrays.asList(
             GENERATOR_SEED,
             PICTURE_SEED,

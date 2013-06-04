@@ -1,8 +1,9 @@
-package org.rasterfun.effect.container;
+package org.rasterfun.effect;
 
 import org.rasterfun.core.compiler.RendererBuilder;
-import org.rasterfun.effect.AbstractEffect;
-import org.rasterfun.effect.Effect;
+import org.rasterfun.effect.container.EffectContainer;
+import org.rasterfun.effect.container.EffectContainerImpl;
+import org.rasterfun.effect.container.EffectContainerListener;
 import org.rasterfun.effect.variable.InputOutputVariable;
 import org.rasterfun.effect.variable.InputVariable;
 import org.rasterfun.effect.variable.OutputVariable;

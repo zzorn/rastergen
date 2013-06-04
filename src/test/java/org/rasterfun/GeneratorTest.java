@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.rasterfun.core.PictureCalculations;
 import org.rasterfun.core.listeners.PictureCalculationsListener;
 import org.rasterfun.effect.NoiseEffect;
-import org.rasterfun.effect.container.CompositeEffect;
+import org.rasterfun.effect.CompositeEffect;
 import org.rasterfun.effect.variable.InputVariable;
 import org.rasterfun.generator.Generator;
 import org.rasterfun.generator.GeneratorListener;

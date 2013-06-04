@@ -1,0 +1,48 @@
+
+@desc "Adjusts brightness and contrast of an input."
+effect BrightnessAndContrast {
+
+    import someotherUtilities.subpackage.*
+    import ciriuscybernetics.Watermark
+
+    @desc "Input value."
+    input float in = 0
+
+    @desc "Contrast, zero being no change."
+    @range(softmin = -100, softmax = 100, center = 0, logarithmic = false)
+    input float contrast = 0
+
+    @desc "Extra grain effect"
+    input boolean grains = false
+
+    @desc "Brightness to apply"
+    @range(softmin = -100, softmax = 100, center = 0, logarithmic = false)
+    input float brightness = 0
+
+    // Parsed to a CalculationEffect, or possibly a series of elementary calculation effects?
+    var float value = in * ((contrast + 100) / 100) + brightness / 100
+
+    // If expression is parsed to an IfEffect call
+    output float out = value + if (grains) Noise(amplitude = 0.1) else 0
+
+    // Output channels could be either required or optional, if optional, the effect will not add them to the picture if they are not already there.
+    // They are optional by default.
+    channel value = out
+
+    // Apply watermark as an example of affecting channels
+    Watermark(text="THIS EFFECT BROUGHT TO YOU BY SIRIUS CYBERNETCIS CORP", size = 100, opacity = 10)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
